@@ -1,33 +1,42 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  
-  <title>Movie Nerd's Hang Man Game</title>
-  <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!--reset-->
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans:300|Oswald" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="assets/javascript/game1.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans:300|Oswald" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+
 </head>
-<body>
-    <div class="container">
-        <div class="blue-neon">
-            <h1 id="title">Movie Nerd's Hang Man Game</h1>
-        </div>   
-    </div>
-    <div class="underscore"></div>
-    <div class="rightGuess">right guess</div>
-    <div class="wrongGuess">wrong guess</div>
-    <button id="clear">clear</button>
-    <button id="next">next</button>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/javascript/game1.js"></script>
-</body>
+    <body>
+            <div class="container">
+                <div class="blue-neon">
+                    <h1>Movie Nerd's Hang Man Game</h1>
+                </div>
+            </div>
+            <br>
+
+        <div class="wrapper">
+            <h2> - Guesss the Movie Title - </h2>
+            <br>
+            <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+            <div id="buttons">
+            </div>  
+            <p id="genreName"></p>
+            <div id="hold">
+            </div>
+            <p id="mylives"></p>
+            <p id="clue">Clue -</p>  
+            <br>
+            <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+            <div class="container">
+                <button id="hint">Hint</button>
+                <button id="reset">Play again</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/game2.js"></script>
+    </body>
 </html>
